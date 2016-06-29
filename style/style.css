@@ -1,0 +1,41 @@
+.map {
+    height: 50vh;
+    width: 100%;
+}
+
+input.search-input {
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.doodle-item {
+    background-color: #D8D8D8;
+    border-radius: 12px;
+    width: 31%;
+    margin: 13px;
+    display: inline-flex;
+    padding: 10px;
+}
+
+.margin20v {
+    margin: 20px 0;
+}
+
+.nav {
+    padding: 20px;
+    margin: 20px 0;
+    background: #060650;
+    text-align: right;
+}
+
+.nav a {
+    margin: 20px;
+    color: white;
+}
+
+.nav a:hover, .nav a:visited, .nav a:focus {
+    color: white;
+    text-decoration: none;
+}
