@@ -9,7 +9,7 @@ import DoodlesMap from './components/doodles-map';
 import CreateDoodle from './components/create-doodle';
 
 export default (
-    <Route path="/" component={App}>
+    <Route path="/doodleClient/" component={App}>
         <IndexRoute component={DoodlesList}/>
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
