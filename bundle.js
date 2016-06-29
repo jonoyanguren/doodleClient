@@ -33044,7 +33044,7 @@
 	        value: function renderYouAreHereMarker() {
 	            return _react2.default.createElement(_Marker2.default, {
 	                position: this.state.center,
-	                icon: '../../img/you-are-here.png'
+	                icon: 'https://github.com/jonoyanguren/doodleClient/blob/gh-pages/img/you-are-here.png'
 	            });
 	        }
 	    }, {
@@ -33087,7 +33087,7 @@
 	                        return _react2.default.createElement(_Marker2.default, {
 	                            key: index,
 	                            position: doodle.deliveryAddress,
-	                            icon: '../../img/marker.png',
+	                            icon: 'https://github.com/jonoyanguren/doodleClient/blob/gh-pages/img/marker.png',
 	                            info: info
 	                        });
 	                    })
@@ -33381,7 +33381,7 @@
 	                position: this.state.center,
 	                draggable: true,
 	                onDragendEvent: this.onDragend.bind(this),
-	                icon: '../../img/you-are-here.png'
+	                icon: 'https://github.com/jonoyanguren/doodleClient/blob/gh-pages/img/you-are-here.png'
 	            });
 	        }
 	    }, {
