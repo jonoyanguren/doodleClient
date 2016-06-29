@@ -4,7 +4,7 @@ export const FETCH_DOODLES = 'FETCH_DOODLES';
 export const CREATE_DOODLE = 'CREATE_DOODLE';
 
 //const BASE_URL = 'http://localhost:3131';
-const BASE_URL = 'https://doodle-api.herokuapp.com/';
+const BASE_URL = 'https://doodle-api.herokuapp.com';
 
 export function fetchDoodles() {
     const request = axios.get(`${BASE_URL}/doodle/all`);
