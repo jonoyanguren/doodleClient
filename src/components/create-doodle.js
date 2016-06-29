@@ -47,7 +47,7 @@ class CreateDoodle extends Component {
                 position={this.state.center}
                 draggable={true}
                 onDragendEvent={this.onDragend.bind(this)}
-                icon="https://github.com/jonoyanguren/doodleClient/blob/gh-pages/img/you-are-here.png"
+                icon="/img/you-are-here.png"
             />
         )
     }
