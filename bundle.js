@@ -33044,7 +33044,7 @@
 	        value: function renderYouAreHereMarker() {
 	            return _react2.default.createElement(_Marker2.default, {
 	                position: this.state.center,
-	                icon: '/img/youarehere.png'
+	                icon: '/doodleClient/img/youarehere.png'
 	            });
 	        }
 	    }, {
@@ -33087,7 +33087,7 @@
 	                        return _react2.default.createElement(_Marker2.default, {
 	                            key: index,
 	                            position: doodle.deliveryAddress,
-	                            icon: '/img/marker.png',
+	                            icon: '/doodleClient/img/marker.png',
 	                            info: info
 	                        });
 	                    })
@@ -33381,7 +33381,7 @@
 	                position: this.state.center,
 	                draggable: true,
 	                onDragendEvent: this.onDragend.bind(this),
-	                icon: '/img/youarehere.png'
+	                icon: '/doodleClient/img/youarehere.png'
 	            });
 	        }
 	    }, {

@@ -37,7 +37,7 @@ class DoodlesMap extends Component {
         return (
             <Marker
                 position={this.state.center}
-                icon="/img/youarehere.png"
+                icon="/doodleClient/img/youarehere.png"
             />
         )
     }
@@ -74,7 +74,7 @@ class DoodlesMap extends Component {
                                 <Marker
                                     key={index}
                                     position={doodle.deliveryAddress}
-                                    icon="/img/marker.png"
+                                    icon="/doodleClient/img/marker.png"
                                     info={info}
                                 />
                             )
