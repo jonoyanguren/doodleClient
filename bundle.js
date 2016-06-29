@@ -27887,7 +27887,8 @@
 	var FETCH_DOODLES = exports.FETCH_DOODLES = 'FETCH_DOODLES';
 	var CREATE_DOODLE = exports.CREATE_DOODLE = 'CREATE_DOODLE';
 
-	var BASE_URL = 'http://localhost:3131';
+	//const BASE_URL = 'http://localhost:3131';
+	var BASE_URL = 'https://doodle-api.herokuapp.com/';
 
 	function fetchDoodles() {
 	    var request = _axios2.default.get(BASE_URL + '/doodle/all');
