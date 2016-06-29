@@ -47,7 +47,7 @@ class CreateDoodle extends Component {
                 position={this.state.center}
                 draggable={true}
                 onDragendEvent={this.onDragend.bind(this)}
-                icon="/img/you-are-here.png"
+                icon="/img/youarehere.png"
             />
         )
     }
