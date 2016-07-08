@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
+@import 'colors.scss';
+@import 'common.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a.btn-a, a.btn-a:hover, a.btn-a:visited {
+  color: white !important;
+}
+
+.contanier {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.search-iput {
+  font-size: 17px;
+  padding: 3px;
+  margin-top: 9px;
+  padding-left: 10px;
+}
+
+.map {
+  height: 50vh;
+  width: 100%;
+}
+
+.margin20v {
+  margin: 20px 0;
+}
+
+/*HEADER*/
+header {
+  padding: 30px;
+  color: white;
+}
+
+.logo {
+  width: 250px;
+}
+
+.nav {
+  margin: 20px 0;
+  text-align: right;
+  right: 0;
+  position: absolute;
+  top: 0;
+  font-size: 1.3em;
+  a {
+    margin: 20px;
+    color: $logoBlue;
+  }
+}
+
+.nav a:hover, .nav a:visited, .nav a:focus {
+  color: $logoBlue;
+  text-decoration: none;
+}
+
+/*SEARCH*/
+.search {
+  text-align: center;
+}
+
+.search input {
+  padding: 8px 0 8px 20px;
+  border-radius: 3px;
+  width: 400px;
+  font-size: 20px;
+  color: black;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid black;
+
+  &:focus {
+    outline: none;
+    border: solid 2px #227FB0;
+  }
+}
+
+.search button {
+  margin-top: -5px;
+  margin-left: 15px;
+  width: 165px;
+}
+
+.doodle-item {
+  background-color: #D8D8D8;
+  border-radius: 12px;
+  width: 31%;
+  margin: 13px;
+  display: inline-flex;
+  padding: 10px;
+}
+
+/*CREATE DOODLE*/
+.inputs-section {
+  padding: 0 10% 20px;
+  margin: 5% 0;
+  color: #666666;
+  border: 3px solid #777777;
+  border-radius: 8px;
+
+  h3 {
+    position: relative;
+    top: -20px;
+    background: white;
+    padding: 5px 20px 0 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+}
+
+.doodle-form-submit button {
+  @extend .button-big;
+  color: #ffffff;
+  background-color: #18bc2c;
+  border-color: #18bc2c;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.products {
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+
+.product {
+  border: 2px solid #eeeeee;
+  padding: 10px;
+  margin: 10px 0;
+
+  .product-info {
+    div {
+      display: inline-block;
+      width: 15%;
+      text-align: center;
+    }
+  }
+}
+
+.productValue {
+  color: orange;
+}
+
+.productName {
+  font-size: 1.8em;
+  text-decoration: underline;
+  width: 25% !important;
+}
+
+.save-product {
+  @extend .button-big;
+  margin-top: 30px;
+}
+
+.dropzone {
+  width: 100% !important;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #888888;
+  margin: 30px 0;
+}
+
+.dropzone-active {
+  background: #eee;
+}
+
+.product-images {
+  text-align: center;
+  margin-top: 25px;
+
+  .image-container {
+    margin: 10px;
+    width: 15%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .image-container, .product-image {
+    margin: 10px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  span {
+    background: orangeRed;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 50%;
+  }
+}
+
+/*REGISTER*/
+.register-form {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+
+  button {
+    @extend .button-big;
+  }
+}
+
+.register-success {
+  background: url("../../img/one-more-step.jpg") no-repeat;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  max-width: 1024px;
+  margin: auto;
+
+  h3 {
+    font-size: 26px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    line-height: 1.4em;
+  }
+}
+
+.ambassadors-list {
+  .list-group-item {
+    padding: 0;
+  }
+
+  .ambassador-item  {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lightGray;
+    }
+
+    img {
+      width: 90px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.selected-ambassador {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: .25rem;
+  margin: 20px 0;
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  div {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 15px;
+  }
+}
+
+/*DASHBOARD*/
+.dashboard {
+  div {
+    width: 400px;
+
+    button {
+      width: 100%;
+    }
+  }
+}

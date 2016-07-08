@@ -128,7 +128,6 @@ header {
     background: white;
     padding: 5px 20px 0 20px;
     margin-top: 0;
-    margin-bottom: 0;
     display: inline-block; }
 
 .doodle-form-submit button {
@@ -215,16 +214,8 @@ header {
     padding: 30px;
     line-height: 1.4em; }
 
-.ambassadors-list .list-group-item {
-  padding: 0; }
-
-.ambassadors-list .ambassador-item {
-  cursor: pointer; }
-  .ambassadors-list .ambassador-item:hover {
-    background-color: #f3f3f3; }
-  .ambassadors-list .ambassador-item img {
-    width: 90px;
-    margin-right: 20px; }
+.ambassadors-list {
+  color: red; }
 
 .selected-ambassador {
   background-color: #fff;
