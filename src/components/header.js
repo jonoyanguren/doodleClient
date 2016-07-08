@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <Link to="/">
+                <Link to="/doodleClient">
                     <img className="logo" src="/doodleClient/img/logo.png"/>
                 </Link>
                 <ul className="nav">
