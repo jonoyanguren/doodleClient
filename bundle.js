@@ -32627,7 +32627,7 @@
 	                _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { to: '/' },
-	                    _react2.default.createElement('img', { className: 'logo', src: 'img/logo.png' })
+	                    _react2.default.createElement('img', { className: 'logo', src: 'doodleClient/img/logo.png' })
 	                ),
 	                _react2.default.createElement(
 	                    'ul',
