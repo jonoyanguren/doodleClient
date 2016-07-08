@@ -201,7 +201,7 @@ header {
   text-align: center; }
 
 .register-success {
-  background: url("../../img/one-more-step.jpg") no-repeat;
+  background: url("doodleClient/img/one-more-step.jpg") no-repeat;
   background-size: cover;
   height: 600px;
   text-align: center;
