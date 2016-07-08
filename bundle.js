@@ -27880,8 +27880,8 @@
 	var FETCH_AMBASSADORS = exports.FETCH_AMBASSADORS = 'FETCH_AMBASSADORS';
 	var FETCH_AMBASSADORS_BY_VALUE = exports.FETCH_AMBASSADORS_BY_VALUE = 'FETCH_AMBASSADORS_BY_VALUE';
 
-	var BASE_URL = 'http://localhost:3131';
-	//const BASE_URL = 'https://doodle-api.herokuapp.com';
+	// const BASE_URL = 'http://localhost:3131';
+	var BASE_URL = 'https://doodle-api.herokuapp.com';
 
 	function fetchDoodles() {
 	    var request = _axios2.default.get(BASE_URL + '/doodle/all');

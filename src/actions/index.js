@@ -8,8 +8,8 @@ export const LOGIN = 'LOGIN';
 export const FETCH_AMBASSADORS = 'FETCH_AMBASSADORS';
 export const FETCH_AMBASSADORS_BY_VALUE = 'FETCH_AMBASSADORS_BY_VALUE';
 
-const BASE_URL = 'http://localhost:3131';
-//const BASE_URL = 'https://doodle-api.herokuapp.com';
+// const BASE_URL = 'http://localhost:3131';
+const BASE_URL = 'https://doodle-api.herokuapp.com';
 
 export function fetchDoodles() {
     const request = axios.get(`${BASE_URL}/doodle/all`);
