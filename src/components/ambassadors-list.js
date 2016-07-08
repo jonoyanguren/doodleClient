@@ -14,7 +14,7 @@ class AmbassadorsList extends Component {
                                 className="list-group-item ambassador-item"
                                 onClick={this.props.onClick.bind(this, ambassador)}>
 
-                                {!ambassador.image ? <img src="../../img/no-image.jpg"/> : <img src={this.state.selectedAmbassador.image}/>}
+                                {!ambassador.image ? <img src="img/no-image.jpg"/> : <img src={this.state.selectedAmbassador.image}/>}
 
                                 {ambassador.name} - {ambassador.email}
                             </div>
