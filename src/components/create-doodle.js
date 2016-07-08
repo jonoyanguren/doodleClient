@@ -57,7 +57,7 @@ class CreateDoodle extends Component {
                 position={this.state.center}
                 draggable={true}
                 onDragendEvent={this.onDragend.bind(this)}
-                icon="img/markers/you-are-here.png"
+                icon="doodleClient/img/markers/you-are-here.png"
             />
         )
     }
@@ -221,7 +221,7 @@ class CreateDoodle extends Component {
                                 {
                                     this.state.selectedAmbassador ?
                                         <div className="selected-ambassador">
-                                            {!this.state.selectedAmbassador.image ? <img src="img/no-image.jpg"/> : <img src={this.state.selectedAmbassador.image}/>}
+                                            {!this.state.selectedAmbassador.image ? <img src="doodleClient/img/no-image.jpg"/> : <img src={this.state.selectedAmbassador.image}/>}
                                                 <div>
                                                     <h4 className="card-title">{this.state.selectedAmbassador.name}</h4>
                                                     <p className="card-text">{this.state.selectedAmbassador.email}</p>

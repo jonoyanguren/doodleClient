@@ -32627,7 +32627,7 @@
 	                _react2.default.createElement(
 	                    _reactRouter.Link,
 	                    { to: '/' },
-	                    _react2.default.createElement('img', { className: 'logo', src: 'img/logo.png' })
+	                    _react2.default.createElement('img', { className: 'logo', src: 'doodleClient/img/logo.png' })
 	                ),
 	                _react2.default.createElement(
 	                    'ul',
@@ -33104,7 +33104,7 @@
 	        value: function renderYouAreHereMarker() {
 	            return _react2.default.createElement(_Marker2.default, {
 	                position: this.state.center,
-	                icon: 'img/markers/you-are-here.png'
+	                icon: 'doodleClient/img/markers/you-are-here.png'
 	            });
 	        }
 	    }, {
@@ -33147,7 +33147,7 @@
 	                        return _react2.default.createElement(_Marker2.default, {
 	                            key: index,
 	                            position: doodle.deliveryAddress,
-	                            icon: 'img/markers/marker.png',
+	                            icon: 'doodleClient/img/markers/marker.png',
 	                            info: info
 	                        });
 	                    })
@@ -33460,7 +33460,7 @@
 	                position: this.state.center,
 	                draggable: true,
 	                onDragendEvent: this.onDragend.bind(this),
-	                icon: 'img/markers/you-are-here.png'
+	                icon: 'doodleClient/img/markers/you-are-here.png'
 	            });
 	        }
 	    }, {
@@ -33707,7 +33707,7 @@
 	                                this.state.selectedAmbassador ? _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'selected-ambassador' },
-	                                    !this.state.selectedAmbassador.image ? _react2.default.createElement('img', { src: 'img/no-image.jpg' }) : _react2.default.createElement('img', { src: this.state.selectedAmbassador.image }),
+	                                    !this.state.selectedAmbassador.image ? _react2.default.createElement('img', { src: 'doodleClient/img/no-image.jpg' }) : _react2.default.createElement('img', { src: this.state.selectedAmbassador.image }),
 	                                    _react2.default.createElement(
 	                                        'div',
 	                                        null,
@@ -48719,7 +48719,7 @@
 	                            key: index,
 	                            className: "list-group-item ambassador-item",
 	                            onClick: _this2.props.onClick.bind(_this2, ambassador) },
-	                        !ambassador.image ? _react2.default.createElement("img", { src: "img/no-image.jpg" }) : _react2.default.createElement("img", { src: _this2.state.selectedAmbassador.image }),
+	                        !ambassador.image ? _react2.default.createElement("img", { src: "doodleClient/img/no-image.jpg" }) : _react2.default.createElement("img", { src: _this2.state.selectedAmbassador.image }),
 	                        ambassador.name,
 	                        " - ",
 	                        ambassador.email
