@@ -14,7 +14,7 @@ import ProductorDashboard from './components/productor/dashboard';
 import AmbassadorDashboard from './components/ambassador/dashboard';
 
 export default (
-    <Route path="/" component={App}>
+    <Route path="/DoodleClient" component={App}>
         <IndexRoute component={DoodlesList}/>
         <Route path="/login" component={Login}/>
         <Route path="/doodlesMap" component={DoodlesMap}/>
