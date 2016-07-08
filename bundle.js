@@ -27910,7 +27910,7 @@
 	}
 
 	function registerAmbassador(data) {
-	    var request = _axios2.default.post(BASE_URL + '/auth//register/ambassador', data);
+	    var request = _axios2.default.post(BASE_URL + '/auth/register/ambassador', data);
 
 	    return {
 	        type: REGISTER_AMBASSADOR,
@@ -27919,7 +27919,7 @@
 	}
 
 	function registerProductor(data) {
-	    var request = _axios2.default.post(BASE_URL + '/auth//register/productor', data);
+	    var request = _axios2.default.post(BASE_URL + '/auth/register/productor', data);
 
 	    return {
 	        type: REGISTER_PRODUCTOR,

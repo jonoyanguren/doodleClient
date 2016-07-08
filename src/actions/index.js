@@ -38,7 +38,7 @@ export function createDoodle(data) {
 }
 
 export function registerAmbassador(data) {
-    const request = axios.post(`${BASE_URL}/auth//register/ambassador`, data);
+    const request = axios.post(`${BASE_URL}/auth/register/ambassador`, data);
 
     return {
         type: REGISTER_AMBASSADOR,
@@ -47,7 +47,7 @@ export function registerAmbassador(data) {
 }
 
 export function registerProductor(data) {
-    const request = axios.post(`${BASE_URL}/auth//register/productor`, data);
+    const request = axios.post(`${BASE_URL}/auth/register/productor`, data);
 
     return {
         type: REGISTER_PRODUCTOR,
