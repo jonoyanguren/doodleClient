@@ -5,8 +5,12 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <Header />
-                <div className="contanier">
+                {
+                    location.pathname == "/login" ||
+                    location.pathname == "/registerProductor" ||
+                    location.pathname == "/registerAmbassador" ? null : <Header/>
+                }
+                <div>
                     {this.props.children}
                 </div>
             </div>

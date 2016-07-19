@@ -1,14 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class SearchBar extends Component {
-    render() {
-        return(
-            <div className="search">
-                <input />
-                <button className="btn btn-primary">Search</button>
-            </div>
-        )
-    }
-}
-
-export default SearchBar;
+export const SearchBar = ({handleChange}) =>
+    <div className="search">
+        <h4>Los últimos doodles</h4>
+        <div className="search-box">
+            <input placeholder="Look for a doodle" onChange={handleChange.bind(this)}/>
+            <button className="btn btn-primary"><img src="/doodleClient/img/search-icon.png"/></button>
+        </div>
+    </div>

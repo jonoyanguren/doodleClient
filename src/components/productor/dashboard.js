@@ -5,6 +5,7 @@ class ProductorDashboard extends Component {
     render() {
         return (
             <div className="dashboard">
+                <h3>Productor dashboard</h3>
                 <div>
                     <Link to="/create-doodle">
                         <button className="btn btn-primary btn-lg button-big">Create doodle</button>

@@ -1,14 +1,26 @@
-import {FETCH_DOODLES} from '../actions/index';
+import {RECEIVE_ALL_DOODLES} from '../actions/index';
 
-const INITIAL_STATE = {all: []};
+const INITIAL_STATE = {
+    all: [],
+    isFetched: false
+};
 
-export default function (state = INITIAL_STATE, action) {
+export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case FETCH_DOODLES:
-            if(action.error) {
-                return{error: action.error, message: "Error: " + action.payload.error}
-            }
-            return {...state, all: action.payload.data.doodles};
+        case `${RECEIVE_ALL_DOODLES}_PENDING`:
+            return {};
+        case `${RECEIVE_ALL_DOODLES}_FULFILLED`:
+            return {
+                doodles: action.payload,
+                err: null,
+                isFetched: true
+            };
+        case `${RECEIVE_ALL_DOODLES}_REJECTED`:
+            return {
+                doodles: null,
+                err: action.payload,
+                isFetched: true
+            };
         default:
             return state;
     }

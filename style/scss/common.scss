@@ -1,20 +1,82 @@
+@import './colors';
+
+.contanier {
+  max-width: 950px;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.red {
+  color: $errorColor;
+}
+
+.green {
+  color: $correctColor;
+}
+
+/*BUTTONS*/
 .button-big {
   font-size: 25px;
 }
 
-.inputs-section {
-  padding: 20px 10%;
-  margin: 5% 0;
-  color: #666666;
-  border: 3px solid #777777;
-  border-radius: 8px;
+.btn-red {
+  background-color: $logoRed;
+  color: white;
+  font-weight: bold;
 
-  h3 {
-    position: relative;
-    top: -40px;
-    background: white;
-    padding: 5px 20px 0 20px;
-    margin-top: 0;
-    display: inline-block;
+  &:hover {
+    background-color: darken($logoRed, 7%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($logoRed, 14%);
+    color: white;
+  }
+
+  &:visited {
+    color: white;
   }
 }
+
+.btn-orange {
+  background-color: $orange;
+  color: white;
+  font-weight: lighter;
+  border-radius: 0;
+  padding: 7px;
+  font-size: 17px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+
+  &:hover {
+    background-color: darken($orange, 3%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($orange, 6%);
+    color: white;
+  }
+
+  &:visited {
+    color: white;
+  }
+
+  &:focus {
+    color: white;
+    outline: none;
+  }
+}
+
+
+
