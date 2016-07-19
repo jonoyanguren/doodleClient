@@ -27126,7 +27126,7 @@
 
 	exports.default = _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/', component: _app2.default },
+	    { path: '/doodleClient/', component: _app2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _doodleListContainer2.default, onEnter: boundRouteActions.boundAllDoodles }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _login2.default }),
 	    _react2.default.createElement(_reactRouter.Route, {

@@ -25,7 +25,7 @@ import * as routeActions from "./actions/routeActions";
 const boundRouteActions = bindActionCreators(routeActions, store.dispatch);
 
 export default (
-    <Route path="/" component={App}>
+    <Route path="/doodleClient/" component={App}>
         <IndexRoute component={DoodlesListContainer} onEnter={boundRouteActions.boundAllDoodles}/>
         <Route path="/login" component={Login}/>
         <Route
